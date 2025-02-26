@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BsPlus, BsTrash, BsCheck, BsX, BsSearch } from "react-icons/bs";
-import "../styles/pages.css"; // Import CSS
 
 // Sample Database
 const allClubs = [
@@ -61,7 +60,6 @@ const Page2 = () => {
   const filteredAllClubs = allClubs.filter(club => club.name.toLowerCase().includes(searchAllQuery.toLowerCase()));
 
   return (
-    <div className="page-container">
     <div className="container py-4">
       <h1 className="text-center mb-4">My Clubs</h1>
 
@@ -194,7 +192,6 @@ const Page2 = () => {
         </div>
       )}
     </div>
-      </div>
   );
 };
 
