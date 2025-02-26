@@ -17,38 +17,34 @@ function App() {
     setIsAuthenticated(!!token); // Convert token presence to boolean
   }, []);
 
+  // Function to handle logout (for Profile Page)
+  const handleLogout = () => {
+    localStorage.removeItem("authToken");
+    setIsAuthenticated(false);
+  };
+
   return (
     <Router>
-      {isAuthenticated && <Navbar />} {/* Only show Navbar when logged in */}
+      {isAuthenticated && <Navbar />}
       <Routes>
+        {/* Redirect to profile page after login */}
         <Route 
           path="/" 
           element={isAuthenticated ? <Navigate to="/page1" /> : <Login setIsAuthenticated={setIsAuthenticated} />} 
         />
-        <Route 
-          path="/page1" 
-          element={isAuthenticated ? <Page1 /> : <Navigate to="/" />} 
-        />
-        <Route 
-          path="/page2" 
-          element={isAuthenticated ? <Page2 /> : <Navigate to="/" />} 
-        />
-        <Route 
-          path="/page3" 
-          element={isAuthenticated ? <Page3 /> : <Navigate to="/" />} 
-        />
-        <Route 
-          path="/page4" 
-          element={isAuthenticated ? <Page4 /> : <Navigate to="/" />} 
-        />
-        <Route 
-          path="/page5" 
-          element={isAuthenticated ? <Page5 /> : <Navigate to="/" />} 
-        />
-        <Route 
-          path="/profile" 
-          element={isAuthenticated ? <Profile /> : <Navigate to="/" />} 
-        />
+
+        {/* Protect pages */}
+        <Route path="/page1" element={isAuthenticated ? <Page1 /> : <Navigate to="/" />} />
+        <Route path="/page2" element={isAuthenticated ? <Page2 /> : <Navigate to="/" />} />
+        <Route path="/page3" element={isAuthenticated ? <Page3 /> : <Navigate to="/" />} />
+        <Route path="/page4" element={isAuthenticated ? <Page4 /> : <Navigate to="/" />} />
+        <Route path="/page5" element={isAuthenticated ? <Page5 /> : <Navigate to="/" />} />
+
+        {/* Profile page with logout function */}
+        <Route path="/profile" element={isAuthenticated ? <Profile onLogout={handleLogout} /> : <Navigate to="/" />} />
+
+        {/* Catch all unknown routes and redirect to login */}
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Router>
   );
