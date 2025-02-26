@@ -10,6 +10,8 @@ import Page5 from "./pages/Page5";
 import Profile from "./pages/Profile";
 import Login from "./pages/Login";
 import JobPortal from "./pages/jobportal";
+import HackathonHub from "./pages/hacakathons";
+import LinkedInProfiles from "./pages/LinkedInProfiles";
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -44,7 +46,8 @@ function App() {
         <Route path="/jobportal" element={isAuthenticated ? <JobPortal /> : <Navigate to="/" />} />
         {/* Profile page with logout function */}
         <Route path="/profile" element={isAuthenticated ? <Profile onLogout={handleLogout} /> : <Navigate to="/" />} />
-
+        <Route path="/hackathon" element={isAuthenticated ? <HackathonHub /> : <Navigate to="/" />} />
+        <Route path="/linkedin" element={isAuthenticated ? <LinkedInProfiles /> : <Navigate to="/" />} />
         {/* Catch all unknown routes and redirect to login */}
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>

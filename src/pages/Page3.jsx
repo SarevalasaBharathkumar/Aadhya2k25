@@ -35,19 +35,22 @@ const Page3 = () => {
 
                     {/* Hackathon & Project Collaboration */}
                     <Col md={4}>
+                    <Link to="/hackathon" className="text-decoration-none">
                         <Card className="h-100 custom-card">
                             <Card.Body className="text-center">
-                                <Card.Title className="text-success fw-bold">Hackathon & Project Hub</Card.Title>
+                                <Card.Title className="text-success fw-bold" >Hackathon & Project Hub</Card.Title>
                                 <Card.Text>
                                     Find teammates, join hackathons, and collaborate on research projects. 
                                     Work together to create innovative solutions and gain hands-on experience.
                                 </Card.Text>
                             </Card.Body>
                         </Card>
+                        </Link>
                     </Col>
 
                     {/* Club & Society Discussion */}
                     <Col md={4}>
+                    <Link to="/page2" className="text-decoration-none">
                         <Card className="h-100 custom-card">
                             <Card.Body className="text-center">
                                 <Card.Title className="text-danger fw-bold">Club & Society Discussions</Card.Title>
@@ -57,6 +60,7 @@ const Page3 = () => {
                                 </Card.Text>
                             </Card.Body>
                         </Card>
+                    </Link>
                     </Col>
                 </Row>
             </Container>

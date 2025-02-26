@@ -31,3 +31,39 @@ h2.fw-bold {
   }
 
 }
+/* Heading Dark Purple */
+.heading-purple {
+  color: #4B0082;
+}
+
+/* Hackathon Card Styling */
+.hackathon-card {
+  border: 2px solid #800080 !important;  /* Purple Border */
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Title inside the Card - Dark Purple */
+.hackathon-card .card-title {
+  color: #4B0082 !important;
+}
+
+/* Hover Zoom + Light Purple Shadow */
+.hackathon-card:hover {
+  transform: scale(1.05);
+  background: rgb(221, 203, 230);
+}
+/* Global Purple Button Styling */
+.btn {
+  background: linear-gradient(45deg, #121212, #543f68, #121212);
+  border-color: #800080 !important;  /* Purple Border */
+  color: #ffffff !important;  /* White Text */
+  transition: background-color 0.3s ease-in-out, transform 0.2s;
+}
+
+/* Hover Effect */
+.btn:hover {
+  background: #4B0082 !important;  /* Dark Purple on Hover */
+  border-color: #4B0082 !important;
+  transform: scale(1.05); /* Slight Zoom */
+}
