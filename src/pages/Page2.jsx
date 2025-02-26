@@ -12,7 +12,7 @@ const allClubs = [
 // Simulated Logged-in User
 const loggedInUser = "coordinator1@example.com"; // Change for testing
 
-const StudentClubPage = () => {
+const Page2 = () => {
   const studentClubs = allClubs.filter(club => club.members.includes(loggedInUser) || club.coordinators.includes(loggedInUser));
 
   const [clubs, setClubs] = useState(studentClubs);
@@ -195,4 +195,4 @@ const StudentClubPage = () => {
   );
 };
 
-export default StudentClubPage;
+export default Page2;
