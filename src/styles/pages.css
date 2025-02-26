@@ -1,7 +1,8 @@
 .page-container {
-  margin-top:10%;
+  margin-top: 10%;
   text-align: center;
   color: black;
+  display: flex;
 }
 
 h2.fw-bold {
@@ -25,12 +26,11 @@ h2.fw-bold {
 }
 
 @media (max-width: 768px) {
-
   .page-container {
-    margin-top:20%;
+    margin-top: 20%;
   }
-
 }
+
 /* Heading Dark Purple */
 .heading-purple {
   color: #4B0082;
@@ -53,6 +53,7 @@ h2.fw-bold {
   transform: scale(1.05);
   background: rgb(221, 203, 230);
 }
+
 /* Global Purple Button Styling */
 .btn {
   background: linear-gradient(45deg, #121212, #543f68, #121212);
@@ -66,4 +67,41 @@ h2.fw-bold {
   background: #4B0082 !important;  /* Dark Purple on Hover */
   border-color: #4B0082 !important;
   transform: scale(1.05); /* Slight Zoom */
+}
+
+.club-list {
+  flex: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.club-list.align-left {
+  flex: 0.5;
+}
+
+.club-card {
+  min-height: 100px;
+}
+
+.club-info-panel {
+  width: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.clubs-container {
+  transition: width 0.3s ease-in-out;
+}
+
+.club-info-container {
+  background: #f8f9fa;
+}
+
+.club-logo {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.club-info-logo {
+  width: 100px;
+  height: 100px;
 }
