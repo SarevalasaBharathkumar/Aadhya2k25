@@ -1,0 +1,158 @@
+/* NAVBAR STYLES */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(45deg, #121212, #543f68, #121212);
+    backdrop-filter: blur(10px);
+    padding: 0.8rem 1.5rem;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    box-shadow: 0px 5px 15px rgba(148, 0, 211, 0.3);
+}
+
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.react-icon {
+    text-shadow: 0 0 10px #9400D3, 0 0 20px #9400D3;
+    font-size: 28px;
+}
+
+.logo-text {
+    color: #fff;
+    text-shadow: 0 0 10px #9400D3;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-left: 0.8rem;
+}
+
+.logo-text span {
+    color: #9400D3;
+}
+
+/* MENU ICON (VISIBLE ONLY ON SMALLER SCREENS) */
+.menu-icon {
+    cursor: pointer;
+    display: none;
+    filter: drop-shadow(0 0 10px #4B0082);
+}
+
+/* PROFILE ICON (DESKTOP) */
+.profile-icon {
+    display: flex;
+    align-items: center; /* Ensures vertical alignment */
+    justify-content: center;
+    margin-left: 1rem; /* Creates spacing between nav items and profile */
+    padding: 0; /* Remove extra padding */
+    height:50%; /* Makes sure it aligns with other items */
+}
+
+
+
+/* PROFILE ICON (MOBILE) */
+.profile-icon-mobile {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding: 15px;
+}
+
+.profile-icon-mobile a {
+    color: white;
+    text-shadow: 0 0 5px #9400D3;
+    transition: transform 0.3s;
+}
+
+/* NAV MENU (DESKTOP) */
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    padding: 0.5rem 1.5rem;
+    position: relative;
+}
+
+/* Default link styles */
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Neon glow effect on hover */
+.nav-menu a:hover {
+    color: #9400D3;
+    text-shadow: 0 0 10px #9400D3, 0 0 20px #9400D3;
+}
+
+/* ACTIVE LINK - "Cut out" & Drag down Effect */
+.nav-menu .active {
+    color: #fff;
+    text-shadow: 0 0 15px #9400D3, 0 0 30px #9400D3;
+    transform: translateY(8px);
+    font-weight: bold;
+    background: linear-gradient(180deg, rgba(148, 0, 211, 0.5) 0%, transparent 100%);
+    box-shadow: 0 10px 15px rgba(148, 0, 211, 0.5);
+    padding: 0.5rem 1.5rem;
+    border-radius: 8px;
+}
+
+/* MOBILE MENU STYLES */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 65%;
+        background: rgba(0, 0, 0, 0.95);
+        text-align: center;
+        padding: 0.5rem 0;
+        border-radius: 10px 0 0 10px;
+        box-shadow: 0px 5px 15px rgba(148, 0, 211, 0.5);
+    }
+
+    .mobile-menu ul {
+        flex-direction: column;
+    }
+
+    .mobile-menu li {
+        padding: 0.8rem;
+    }
+
+    /* Active item effect in mobile */
+    .mobile-menu .active {
+        transform: translateY(5px);
+        text-shadow: 0 0 15px #9400D3, 0 0 30px #9400D3;
+        box-shadow: 0 5px 10px rgba(148, 0, 211, 0.5);
+        background: linear-gradient(180deg, rgba(148, 0, 211, 0.4) 0%, transparent 100%);
+    }
+}

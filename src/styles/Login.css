@@ -1,0 +1,88 @@
+/* Full Page Centering */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Login/Signup Form Container */
+.login-container {
+    background: linear-gradient(45deg, #121212, #543f68, #121212);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(148, 0, 211, 0.3);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Heading */
+.login-container h2 {
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+/* Input Fields */
+.input-group {
+    margin-bottom: 1rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.input-group input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Focus Effect */
+.input-group input:focus {
+    border: 1px solid rgba(148, 0, 211, 0.5);
+}
+
+/* Error Messages */
+.error {
+    color: #ff4d4d;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+/* Button */
+.login-btn {
+    background: #9400D3;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background: #b5179e;
+}
+
+/* Toggle Login/Signup */
+.toggle-text {
+    margin-top: 10px;
+    color: white;
+    font-size: 1rem;
+}
+
+.toggle-text span {
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
