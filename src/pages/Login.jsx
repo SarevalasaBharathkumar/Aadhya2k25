@@ -13,7 +13,7 @@ const Login = ({ setIsAuthenticated }) => {
     
     const navigate = useNavigate();
 
-    const validateEmail = (email) => /\S+@\S+\.\S+/.test(email);
+    const validateEmail = (email) => /^rr\d{6}@rguktrkv\.ac\.in$/.test(email);
     const validatePassword = (password) => password.length >= 6; 
 
     const handleSubmit = async (e) => {
@@ -28,7 +28,7 @@ const Login = ({ setIsAuthenticated }) => {
         }
     
         if (!validateEmail(email)) {
-            setError("Invalid email format");
+            setError("Invalid email format or not a college mail");
             setLoading(false);
             return;
         }
