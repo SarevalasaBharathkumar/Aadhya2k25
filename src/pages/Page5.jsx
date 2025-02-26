@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import profileImage from "./download.jpeg";
 import { FaLinkedin, FaTwitter } from "react-icons/fa";
+
 import "../styles/pages.css";
 
 const initialAlumniData = [
@@ -43,6 +44,7 @@ const AlumniDirectory = () => {
 
   return (
     <div className="page-container">
+
     <div className="container my-5">
       <button className="btn btn-primary mb-3" onClick={toggleForm}>Add Alumni</button>
       <button className="btn btn-secondary mb-3 ms-2" onClick={toggleWebinars}>{showWebinars ? "Back to Alumni" : "Go to Webinars"}</button>
