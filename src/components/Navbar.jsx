@@ -53,11 +53,11 @@ const Navbar = () => {
             transition={{ duration: 0.5, ease: "easeInOut" }}
           >
             <ul>
-              <li><NavLink to="/page1" onClick={() => setIsOpen(false)}>Page 1</NavLink></li>
-              <li><NavLink to="/page2" onClick={() => setIsOpen(false)}>Page 2</NavLink></li>
-              <li><NavLink to="/page3" onClick={() => setIsOpen(false)}>Page 3</NavLink></li>
-              <li><NavLink to="/page4" onClick={() => setIsOpen(false)}>Page 4</NavLink></li>
-              <li><NavLink to="/page5" onClick={() => setIsOpen(false)}>Page 5</NavLink></li>
+              <li><NavLink to="/page1" onClick={() => setIsOpen(false)}>Home</NavLink></li>
+              <li><NavLink to="/page2" onClick={() => setIsOpen(false)}>Clubs</NavLink></li>
+              <li><NavLink to="/page3" onClick={() => setIsOpen(false)}>CarrerGuidance</NavLink></li>
+              <li><NavLink to="/page4" onClick={() => setIsOpen(false)}>Shedules</NavLink></li>
+              <li><NavLink to="/page5" onClick={() => setIsOpen(false)}>Alumni</NavLink></li>
 
               {/* PROFILE ICON (Only in Desktop) */}
               {!isMobile && (

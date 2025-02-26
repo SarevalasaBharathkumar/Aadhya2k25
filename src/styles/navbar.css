@@ -47,12 +47,9 @@
 
 /* PROFILE ICON (DESKTOP) */
 .profile-icon {
-    display: flex;
     align-items: center; /* Ensures vertical alignment */
     justify-content: center;
-    margin-left: 1rem; /* Creates spacing between nav items and profile */
-    padding: 0; /* Remove extra padding */
-    height:50%; /* Makes sure it aligns with other items */
+    
 }
 
 
@@ -120,6 +117,7 @@
 @media (max-width: 768px) {
     .menu-icon {
         display: block;
+        color:white;
     }
 
     .nav-menu {
