@@ -31,3 +31,45 @@ h2.fw-bold {
   }
 
 }
+.btn{
+  background: linear-gradient(45deg, #121212, #543f68, #121212);
+}
+.club-list {
+  flex: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.club-list.align-left {
+  flex: 0.5;
+}
+
+.club-card {
+  min-height: 100px;
+}
+
+.club-info-panel {
+  width: 50%;
+  transition: all 0.3s ease-in-out;
+}
+.page-container {
+  display: flex;
+}
+
+.clubs-container {
+  transition: width 0.3s ease-in-out;
+}
+
+.club-info-container {
+  background: #f8f9fa;
+}
+
+.club-logo {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.club-info-logo {
+  width: 100px;
+  height: 100px;
+}
