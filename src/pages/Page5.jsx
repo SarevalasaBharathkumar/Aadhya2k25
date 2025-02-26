@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import profileImage from "./download.jpeg";
 import { FaLinkedin, FaTwitter } from "react-icons/fa";
-import "../styles/pages.css"; // Import CSS
 
+import "../styles/pages.css";
 
 const initialAlumniData = [
   { id: 1, name: "Alice Johnson", jobTitle: "Software Engineer", email: "alice@example.com", linkedin: "#", twitter: "#", photo: profileImage, achievements: "Developed AI-powered tools for automation." },

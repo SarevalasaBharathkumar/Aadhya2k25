@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BsPlus, BsTrash, BsCheck, BsX, BsSearch } from "react-icons/bs";
-import "../styles/pages.css"; // Import CSS
-
+import "../styles/pages.css";
 
 // Sample Database
 const allClubs = [

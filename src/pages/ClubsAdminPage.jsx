@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap
 
+
 const clubsData = [
   { id: 1, name: "Tech Club", logo: "tech.jpg", coordinators: ["Alice"], members: ["Bob", "Charlie"], activities: ["Hackathon", "Workshop"] },
   { id: 2, name: "Music Club", logo: "music.jpg", coordinators: ["Dave"], members: ["Eve", "Frank"], activities: ["Concert", "Practice Session"] },
@@ -61,6 +62,7 @@ const AdminPage = () => {
   };
 
   return (
+    <div className="page-container">
     <div className="container py-4">
       <h1 className="text-center mb-4">Administration</h1>
       
@@ -126,6 +128,7 @@ const AdminPage = () => {
           </div>
         )}
       </div>
+    </div>
     </div>
   );
 };
